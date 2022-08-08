@@ -1,2 +1,2 @@
-# fizzbuzz
-Fizz Buzz in Python
+# FizzBuzz
+A powerful fizz buzz engine.
