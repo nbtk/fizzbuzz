@@ -23,14 +23,11 @@ class FizzBuzz:
         for i in range(start, end+1):
             yield cls.judge(i)
 
-    def play(self, start=1, end=100):
-        self.ret = self.generate(start, end)
-
     def __init__(self, start=1, end=100):
-        self.play(start, end)
+        self.gen = self.generate(start, end)
 
     def __str__(self):
-        return self.delimiter.join(self.ret)
+        return self.delimiter.join(self.gen)
 
 if __name__ == '__main__':
     print(FizzBuzz())
