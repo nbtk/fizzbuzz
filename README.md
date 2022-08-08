@@ -49,6 +49,7 @@ FizzBuzz.judge(31)
 ```
 
 ## CLI
+### Arguments
 ```
 $ fizzbuzz -h
 usage: fizzbuzz [-h] [-s start] [-e end] [-f fizz] [-b buzz] [-z fizzbuzz] [-d delimiter]
@@ -64,7 +65,19 @@ options:
   -z fizzbuzz   replace "Fizz Buzz" string. (default: Fizz Buzz)
   -d delimiter  replace the word delimiter. (default: , )
 ```
+### Execution Example 1
 ```
 $ fizzbuzz
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, ..., 97, 98, Fizz, Buzz
+```
+### Execution Example 2
+```
+$ fizzbuzz -s 9 -e 15 -f fizz -b buzz -z fizzbuzz -d '\n'
+fizz
+buzz
+11
+fizz
+13
+14
+fizzbuzz
 ```
