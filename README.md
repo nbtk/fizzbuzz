@@ -6,7 +6,7 @@ Can't you implement Fizz Buzz? No problem! This module solves everything.
 
 ## Installation
 ```
-pip install fizzbuzz2
+$ pip install fizzbuzz2
 ```
 
 ## Usage
@@ -19,21 +19,29 @@ pip install fizzbuzz2
 ## API
 ### Preparation
 ```
-from fizzbuzz import FizzBuzz
+>>> from fizzbuzz import FizzBuzz
 ```
-### Configuration
+### Configuration Parameters
 ```
-FizzBuzz.fizz = 'Fizz'
-FizzBuzz.buzz = 'Buzz'
-FizzBuzz.fizzbuzz = 'Fizz Buzz'
-FizzBuzz.delimiter = ', '
+>>> FizzBuzz.fizz
+'Fizz'
+>>> FizzBuzz.buzz
+'Buzz'
+>>> FizzBuzz.fizzbuzz
+'Fizz Buzz'
+>>> FizzBuzz.delimiter
+', '
 ```
 ### Judgement Method
 ```
-FizzBuzz.judge(6)
-FizzBuzz.judge(20)
-FizzBuzz.judge(30)
-FizzBuzz.judge(31)
+>>> FizzBuzz.judge(6)
+'Fizz'
+>>> FizzBuzz.judge(20)
+'Buzz'
+>>> FizzBuzz.judge(30)
+'Fizz Buzz'
+>>> FizzBuzz.judge(31)
+'31'
 ```
 ### Creating a FizzBuzz Generator
 ```
@@ -47,7 +55,7 @@ FizzBuzz.judge(31)
 >>> print(fb)
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, ..., 97, 98, Fizz, Buzz
 ```
-### Execution Example
+### Example
 ```
 >>> FizzBuzz.fizz = 'fizz'
 >>> FizzBuzz.buzz = 'buzz'
@@ -80,12 +88,12 @@ options:
   -z fizzbuzz   replace "Fizz Buzz" string. (default: Fizz Buzz)
   -d delimiter  replace the word delimiter. (default: , )
 ```
-### Execution Example 1
+### Example 1
 ```
 $ fizzbuzz
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, ..., 97, 98, Fizz, Buzz
 ```
-### Execution Example 2
+### Example 2
 ```
 $ fizzbuzz -s 9 -e 15 -f fizz -b buzz -z fizzbuzz -d '\n'
 fizz
