@@ -11,10 +11,10 @@ class FizzBuzz:
     def judge(cls, i):
             if i % 15 == 0:
                 return cls.fizzbuzz
-            elif i % 3 == 0:
-                return cls.fizz
             elif i % 5 == 0:
                 return cls.buzz
+            elif i % 3 == 0:
+                return cls.fizz
             else:
                 return str(i)
 

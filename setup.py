@@ -7,7 +7,7 @@ with open('README.md', 'r') as f:
 
 setuptools.setup(
     name='fizzbuzz2',
-    version='2.1.14',
+    version='2.1.16',
     description='Powerful Fizz Buzz Engine',
     long_description=long_description,
     long_description_content_type='text/markdown',

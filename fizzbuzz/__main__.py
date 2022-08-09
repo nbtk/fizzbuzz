@@ -18,9 +18,16 @@ def main():
     FizzBuzz.buzz = args.b
     FizzBuzz.fizzbuzz = args.z
     FizzBuzz.delimiter = args.d.encode().decode('unicode-escape')
-    print(FizzBuzz(args.s, args.e))
+
+    fb = FizzBuzz(args.s, args.e)
+    print(fb.gen.__next__(), end='')
+    for s in fb.gen:
+        print(fb.delimiter + s, end='')
+    print()
+
+    return 0
 
 
 if __name__ == '__main__':
-    main()
+    exit(main())
 
