@@ -14,18 +14,6 @@ pip install fizzbuzz2
 >>> from fizzbuzz import FizzBuzz
 >>> print(FizzBuzz())
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, ..., 97, 98, Fizz, Buzz
->>> FizzBuzz.fizz = 'fizz'
->>> FizzBuzz.buzz = 'buzz'
->>> FizzBuzz.fizzbuzz = 'fizzbuzz'
->>> FizzBuzz.delimiter = '\n'
->>> print(FizzBuzz(start=9, end=15))
-fizz
-buzz
-11
-fizz
-13
-14
-fizzbuzz
 ```
 
 ## API
@@ -58,6 +46,21 @@ FizzBuzz.judge(31)
 >>> fb = FizzBuzz(start=1, end=100))
 >>> print(fb)
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, ..., 97, 98, Fizz, Buzz
+```
+### Execution Example
+```
+>>> FizzBuzz.fizz = 'fizz'
+>>> FizzBuzz.buzz = 'buzz'
+>>> FizzBuzz.fizzbuzz = 'fizzbuzz'
+>>> FizzBuzz.delimiter = '\n'
+>>> print(FizzBuzz(start=9, end=15))
+fizz
+buzz
+11
+fizz
+13
+14
+fizzbuzz
 ```
 
 ## CLI
