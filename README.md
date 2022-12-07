@@ -1,3 +1,5 @@
+[![Downloads](https://static.pepy.tech/personalized-badge/fizzbuzz2?period=total&units=none&left_color=grey&right_color=blue&left_text=Downloads)](https://pepy.tech/project/fizzbuzz2)
+
 # FizzBuzz2
 A powerful fizz buzz engine.
 
